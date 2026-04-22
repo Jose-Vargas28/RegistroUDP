@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefWidth="350.0" prefHeight="280.0"
+      xmlns="http://javafx.com/javafx/25"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controlador.ControladorRegistro"
+      style="-fx-background-color: #eaf4fb;">
+
+
+    <Label layoutX="90" layoutY="15" text="Aplicación Cliente"
+           style="-fx-background-color: #4ba3d3; -fx-text-fill: white; -fx-padding: 6;">
+        <font>
+            <Font size="14"/>
+        </font>
+    </Label>
+
+
+    <Label layoutX="30" layoutY="60" text="Nombre:"/>
+    <TextField fx:id="txtNombre" layoutX="110" layoutY="55" prefWidth="200"/>
+
+    <Label layoutX="30" layoutY="95" text="Cédula:"/>
+    <TextField fx:id="txtCedula" layoutX="110" layoutY="90" prefWidth="200"/>
+
+    <Label layoutX="30" layoutY="130" text="Correo:"/>
+    <TextField fx:id="txtCorreo" layoutX="110" layoutY="125" prefWidth="200"/>
+
+    <Label layoutX="30" layoutY="165" text="Preferencial:"/>
+    <CheckBox fx:id="chkPreferencial" layoutX="140" layoutY="163"/>
+
+
+    <Label fx:id="lblEstado" layoutX="30" layoutY="200" text="Estado:"/>
+
+
+    <Button layoutX="110" layoutY="230" text="Crear Usuario" onAction="#crearUsuario"/>
+
+</Pane>

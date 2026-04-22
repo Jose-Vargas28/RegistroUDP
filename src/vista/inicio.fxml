@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefWidth="350.0" prefHeight="220.0"
+      xmlns="http://javafx.com/javafx/25"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controlador.ControladorInicio"
+      style="-fx-background-color: #eaf4fb;">
+
+
+    <Label layoutX="90" layoutY="15" text="Aplicación Cliente"
+           style="-fx-background-color: #4ba3d3; -fx-text-fill: white; -fx-padding: 6;">
+        <font>
+            <Font size="14"/>
+        </font>
+    </Label>
+
+
+    <Label layoutX="40" layoutY="70" text="Ingresar cédula">
+        <font>
+            <Font size="12"/>
+        </font>
+    </Label>
+
+    <TextField fx:id="txtCedula"
+               layoutX="40" layoutY="100"
+               prefWidth="260"/>
+
+    <Button layoutX="40" layoutY="140" text="Buscar Usuario" onAction="#buscarUsuario"/>
+    <Button layoutX="180" layoutY="140" text="Registrar Usuario" onAction="#registrarUsuario"/>
+
+</Pane>

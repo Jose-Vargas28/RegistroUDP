@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefWidth="350.0" prefHeight="260.0"
+      xmlns="http://javafx.com/javafx/25"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controlador.ControladorCliente"
+      style="-fx-background-color: #eaf4fb;">
+
+    <!-- TÍTULO -->
+    <Label layoutX="90" layoutY="15" text="Aplicación Cliente"
+           style="-fx-background-color: #4ba3d3; -fx-text-fill: white; -fx-padding: 6;">
+        <font>
+            <Font size="14"/>
+        </font>
+    </Label>
+
+    <!-- DATOS -->
+    <Label fx:id="lblCedula"
+           layoutX="30" layoutY="60"
+           text="Cédula: "/>
+
+    <Label fx:id="lblNombre"
+           layoutX="30" layoutY="85"
+           text="Nombre: "/>
+
+    <Label fx:id="lblCorreo"
+           layoutX="30" layoutY="110"
+           text="Correo: "/>
+
+    <Label fx:id="lblPreferencial"
+           layoutX="30" layoutY="135"
+           text="Preferencial: "/>
+
+    <!-- SALDO -->
+    <Label fx:id="lblSaldo"
+           layoutX="30" layoutY="165"
+           text="Saldo: 0.00 USD"/>
+
+    <!-- BOTONES -->
+    <Button layoutX="30" layoutY="200" text="Recargar" onAction="#recargar"/>
+    <Button layoutX="150" layoutY="200" text="Pagar" onAction="#pagar"/>
+
+</Pane>
